@@ -1,0 +1,41 @@
+<div class="toggle">
+
+</div>
+<div class="content">
+    <img class="nightmode" src="./assets/mond.jpg" alt="Nightmode">
+    <img class="lightmode" src="./assets/sonne.png" alt="Nightmode">
+
+
+    <div id="site_content">
+        <div id="site_heading">
+            <h1>Willkommen auf der Webseite des Afghan Sprachdienst</h1>
+
+        </div>
+        <div id="header">
+            <div id="menubar">
+                <ul id="menu">
+                    <li><a [routerLink]="['/home']">Home</a></li>
+                    <li><a [routerLink]="['/language']">Sprachen</a></li>
+                    <li><a [routerLink]="['/impressum']">Impressum</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-9 ">
+                <router-outlet></router-outlet>
+            </div>
+            <div class="col-3 ">
+                <app-sidebar></app-sidebar>
+            </div>
+        </div>
+
+        <div id="footer">
+            Copyright © 2019 Afghan-Sprachdienst Tel.: 069 -730407, Fax: 069 90757703, Handy: 0176 20623061,
+            <br>Email: info@afghan-sprachdienst.de
+        </div>
+
+    </div>
+
+</div>

@@ -1,0 +1,371 @@
+html {
+    height: 100%;
+}
+
+* * {
+    margin: 0;
+    padding: 0;
+}
+
+.nightmode {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 38px;
+    right: 260px;
+    border: none;
+}
+
+.lightmode {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 38px;
+    right: 260px;
+    display: none;
+    border: none;
+}
+
+body.night .nightmode {
+    display: none;
+}
+
+body.night .lightmode {
+    display: block;
+}
+
+body.night .btn {
+    border-color: white;
+}
+
+body {
+    font: normal .80em arial, sans-serif;
+    transition: 0.5s;
+}
+
+body.night {
+    background: #00151f;
+}
+
+.toggle {
+    position: absolute;
+    top: 60px;
+    right: 250px;
+    background: #fff;
+    border: 2px solid #00151f;
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+
+.toggle.active {
+    background: #00151f;
+    border: 5px solid #fff;
+}
+
+.toggle:before {
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 16px;
+    background: #00151f;
+    border-radius: 50%;
+}
+
+.toggle.active:before {
+    top: -2px;
+    left: 25px;
+    background: #fff
+}
+
+.content {
+    margin: 10px auto;
+}
+
+body.night .content p {
+    color: #fff
+}
+
+body.night .content_image {
+    border: #fff;
+    box-shadow: 0px 0px 10px 7px;
+}
+
+body.night .doku {
+    border: outset white 4px;
+}
+
+p {
+    padding: 0 0 10px 0;
+    line-height: 1.7em;
+}
+
+.dienst {
+    border: outset;
+}
+
+.doku {
+    margin: 15px 0 15px 0;
+    border: outset black 4px;
+}
+
+h1,
+h2,
+h4 {
+    font: bold 175% arial, sans-serif;
+    color: #E91741;
+    padding: 5px 0 10px 0;
+}
+
+h2 {
+    font: bold 165% arial, sans-serif;
+}
+
+h4 {
+    margin: 0 0 0 15px;
+    padding: 0 0 5px 0;
+    font: bold 110% arial, sans-serif;
+    color: rgba(0, 140, 198, 0.2);
+    line-height: 1.5em;
+}
+
+ul {
+    margin: 0px 0 22px 0px;
+}
+
+ul li {
+    margin: 2px 0 15px 17px;
+}
+
+#site_content {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    height: 50px;
+}
+
+#site_heading {
+    text-align: center;
+    height: 35px;
+    width: 240px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+}
+
+#site_heading h1 {
+    width: 920px;
+    font: italic 250% arial, sans-serif;
+    letter-spacing: -2px;
+}
+
+#menubar {
+    width: 958px;
+    height: 50px;
+    padding-top: 15px;
+    text-align: center;
+    margin: 0;
+    background: -webkit-linear-gradient(#5E5757, #F63039);
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #0096D4;
+}
+
+ul#menu li {
+    padding: 0 100px 0 100px;
+    margin: 15px 0 0 0;
+    display: inline;
+}
+
+ul#menu li a {
+    font-family: sans-serif;
+    font-size: 130%;
+    letter-spacing: 1px;
+    height: 35px;
+    padding: 15px 20px 0 20px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 1px 1px #1d1d1d;
+}
+
+ul#menu li a:hover {
+    text-decoration: underline;
+}
+
+#site_content {
+    width: 960px;
+    overflow: hidden;
+    padding-top: 20px;
+}
+
+#content {
+    text-align: left;
+    margin: 5px 0 20px 0;
+    padding: 20px 20px 0 0;
+    float: left;
+}
+
+.content_image {
+    width: 100px;
+    height: 100px;
+    margin: 5px 0 20px 5px;
+    float: left;
+    border: black;
+    box-shadow: 0px 0px 10px 7px;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 20px;
+}
+
+.content_text {
+    width: 520px;
+    float: right;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+#banner_image {
+    width: 690px;
+    height: 250px;
+    margin: 0 0 15px 5px;
+    float: left;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 10px
+}
+
+ul.slideshow {
+    width: 690px;
+    height: 250px;
+    position: relative;
+}
+
+ul.slideshow li {
+    position: absolute;
+    margin: 0;
+}
+
+.sidebar_container {
+    float: right;
+    width: 220px;
+    margin: 20px 0px 20px 0;
+    background: #B0B0B0;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}
+
+.sidebar {
+    padding-left: 5px;
+    margin: 10px;
+}
+
+.sidebar_item {
+    font: normal 100% arial, sans-serif;
+    padding: 0 15px 0 0;
+    width: 201px;
+}
+
+.sidebar h2 {
+    color: #fff;
+    text-shadow: 1px 1px #0056AE;
+}
+
+.sidebar h4 {
+    font-size: 125%;
+    color: #FFF;
+    text-shadow: 1px 1px #0056AE;
+}
+
+.sidebar p {
+    color: #FFF;
+}
+
+table,
+th,
+td {
+    padding: 10px 10px 10px 10px;
+}
+
+tr {
+    background-color: #b0b0b0;
+}
+
+.right {
+    text-align: right;
+}
+
+th,
+td {
+    border: 2px solid black;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 50px 60px 50px 60px;
+    margin: 0 5px 5px 0;
+    cursor: pointer;
+    border: outset;
+    border-radius: 30px;
+    border-color: black;
+    transition: ease-in-out all 300ms;
+}
+
+.btn1 {
+    background: url(./assets/german.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn2 {
+    background: url(./assets/england.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn3 {
+    background: url(./assets/afghanistan.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn4 {
+    background: url(./assets/Pakistan.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn5 {
+    background: url(./assets/Iran.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.btn:hover {
+    background-color: #ddd;
+    transform: translate(0px, -10px);
+}
+
+.btn.active {
+    background-color: #666;
+    color: white;
+}
+
+#footer {
+    font-size: 130%;
+    letter-spacing: 1px;
+    padding: 15px 25px 0 5px;
+    width: 920px;
+    height: 70px;
+    text-align: center;
+    color: #FFF;
+    text-shadow: 1px 1px #1d1d1d;
+    background: #F63039;
+    background: -webkit-linear-gradient(#3F4140, #F63039);
+    border-radius: 15px 15px 15px 15px;
+    border: 1px solid #0096D4;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;
+}

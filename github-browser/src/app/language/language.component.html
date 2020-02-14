@@ -1,0 +1,98 @@
+<!-- https://www.w3schools.com/howto/howto_js_filter_elements.asp -->
+
+<img class="doku" width="690" height="250" src="./assets/dokument.jpg">
+<p>Unser Dolmetscherbüro bietet mehrere Formen des Dolmetschen in mehreren Sprachen an.<br> Zu den Dolmetscher Sprachen gehören die unten aufgeführten Auswahlen. Wir können auch eventuell andere Sprachen dolmetschen, jedoch dies nur auf telefonische Anfrage.
+    </p>
+<h2>Sprachauswahl</h2>
+<p>Wählen Sie bitte ihre Sprache aus:</p>
+
+<div>
+
+    <button class="btn btn1" (click)="filterSelection('de')"></button>
+    <button class="btn btn2" (click)="filterSelection('en')"></button>
+    <button class="btn btn3" (click)="filterSelection('afg')"></button>
+    <button class="btn btn4" (click)="filterSelection('ur')"></button>
+    <button class="btn btn5" (click)="filterSelection('pe')"></button>
+</div>
+
+<div class="container">
+    <div *ngIf="zeigDe">
+        <table>
+
+            <tr>
+                <th> Dokumente:</th>
+                <th> Urkunden:</th>
+                <th> Aufnahmen:</th>
+            </tr>
+            <tr>
+                <td>Wir bieten das dolmetschen von jeglichen Dokumenten, sei es ein Brief von Asylamt oder ein privater Brief</td>
+                <td>Jegliche Urkunden wie Personalausweis oder staatliche Eheurkunden <br><br>
+                    <td>Von der Polizei aufgenommene Telefonate oder auch private Aufnahmen</td>
+            </tr>
+        </table>
+    </div>
+
+    <div *ngIf="zeigEn">
+        <table>
+
+            <tr>
+                <th> Documents:</th>
+                <th> Certificates:</th>
+                <th> Recordings:</th>
+            </tr>
+            <tr>
+                <td>We offer interpreting of any document, be it a letter from the Asylum Office or a private letter</td>
+                <td>Any documents such as identity card or state marriage certificates</td>
+                <td>Telephone calls recorded by the police or private recordings</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="zeigAfg">
+        <table>
+
+            <tr class="right">
+                <th>: پاڼې</th>
+                <th>: سند</th>
+                <th>: ثبت</th>
+            </tr>
+            <tr class="right">
+                <td>موږ د کوم سند تفسیر وړاندیز کوو ، دا د پناه غوښتنې دفتر څخه لیک یا شخصي خط وي</td>
+                <td>هر سندونه لکه د شناخت کارت یا د دولتي واده سندونه</td>
+                <td>د تلیفون تلیفونونه د پولیسو یا خصوصي ریکارډونو لخوا ثبت شوي</td>
+            </tr>
+        </table>
+    </div>
+
+    <div *ngIf="zeigUr">
+        <table>
+
+            <tr class="right">
+                <th>: کاغذات</th>
+                <th>: سرٹیفیکیٹ</th>
+                <th>:عفناحمین</th>
+            </tr>
+            <tr class="right">
+                <td>ویر بیٹین داس ڈولمیٹسچن وان جیگلیچن ڈوکیمٹن ، سیئ ایس ایئن بریف وون اسیلمٹ اوڈر ایئن پرائیوٹر بریف</td>
+                <td>جیگلیچے اورکونڈین وائی پرسنالاس ویس اوڈر اسٹاٹلیچ ایہورکنڈن</td>
+                <td>وان ڈیر پولیسی اففونومینی ٹیلیفونٹ اوڈر آچ پرائیوٹ اوفنا مین</td>
+            </tr>
+        </table>
+    </div>
+    <div *ngIf="zeigPe">
+        <table>
+
+            <tr class="right">
+                <th>: دوکمانت</th>
+                <th>: اروكوندن</th>
+                <th>: آفتابنمن</th>
+            </tr>
+            <tr class="right">
+                <td>ما پیشنهاد می کنیم از هر سندی تفسیر کنیم ، خواه نامه ای از دفتر پناهندگی باشد یا یک نامه خصوصی</td>
+                <td>مدارکی مانند شناسنامه یا شناسنامه ازدواج ایالتی</td>
+                <td>تماسهای تلفنی ضبط شده توسط پلیس یا ضبط های خصوصی</td>
+            </tr>
+        </table>
+    </div>
+
+
+</div>
